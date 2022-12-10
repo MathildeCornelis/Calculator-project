@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "mixin";
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    main{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5%;
+        border: 2px solid rgb(134, 134, 134);
+        border-radius: 10px;
+        background-color: rgb(190, 190, 190);
+        font-family: 'Roboto', sans-serif;
+        @include desktop{
+            width: 50%;
+            height: 50%;
+        }
+        .result{
+            width: 100%;
+            text-align: right;
+            padding-right: 5%;
+            margin-bottom: 5%;
+            border: 1px solid rgb(187, 187, 187);
+            border-radius: 10px;
+            background-color: rgb(225, 225, 225);
+            @include desktop{
+                height: 25%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            p{
+                @include desktop{
+                    font-size: 150%;
+                }
+            }
+        }
+        .touches{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            button{
+                width: 20%;
+                margin: 1%;
+                padding: 1%;
+                background-color: white;
+                border: 1px solid rgb(187, 187, 187);
+                border-radius: 4px;
+                background-color: rgb(225, 225, 225);
+                @include desktop{
+                    padding: 2%;
+                }
+            }
+        }
+    }
+}
